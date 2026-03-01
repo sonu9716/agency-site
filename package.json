@@ -4,6 +4,7 @@
   "description": "Monorepo for Agency Site + Demo Sites",
   "main": "server.js",
   "scripts": {
+    "postinstall": "npm run build",
     "build": "cd demo-site && npm install && npm run build && cd ../demo-site2 && npm install && npm run build",
     "start": "node server.js"
   },
