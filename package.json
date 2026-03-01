@@ -1,0 +1,13 @@
+{
+  "name": "agency-site-mono",
+  "version": "1.0.0",
+  "description": "Monorepo for Agency Site + Demo Sites",
+  "main": "server.js",
+  "scripts": {
+    "build": "cd demo-site && npm install && npm run build && cd ../demo-site2 && npm install && npm run build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
