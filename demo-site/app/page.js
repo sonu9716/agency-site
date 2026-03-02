@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section style={{
+      <section className="hero-section" style={{
         minHeight: '100vh',
         background: '#0B1C38',
         position: 'relative',

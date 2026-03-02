@@ -501,6 +501,14 @@ a {
     gap: 32px;
   }
 
+  /* ── Hero: don't make the dark section fill entire screen on mobile ── */
+  .hero-section {
+    min-height: unset !important;
+    padding-top: 90px !important;
+    padding-bottom: 56px !important;
+    align-items: flex-start !important;
+  }
+
   /* Hide desktop right-column photo on hero */
   .hero-grid>div:last-child {
     display: none;

@@ -140,6 +140,13 @@ export default function Navbar() {
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: flex !important; }
+          /* Always white nav on mobile - no transparent dark overlay */
+          header { 
+            background: rgba(255,255,255,0.97) !important;
+            backdrop-filter: blur(12px) !important;
+            box-shadow: 0 1px 16px rgba(11,28,56,0.1) !important;
+            border-bottom: 1px solid rgba(224,231,239,0.8) !important;
+          }
         }
       `}</style>
         </header>
