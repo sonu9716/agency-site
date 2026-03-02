@@ -35,7 +35,7 @@ export default function HomePage() {
         <div style={{ position: 'absolute', top: 0, left: 0, width: '3px', height: '100%', background: 'linear-gradient(to bottom, #4CAF50, transparent)' }} />
 
         <div className="container-custom" style={{ position: 'relative', zIndex: 1, padding: '60px 24px' }}>
-          <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }}>
+          <div className="hero-grid" style={{ display: 'grid', alignItems: 'center' }}>
 
             {/* Left */}
             <div>

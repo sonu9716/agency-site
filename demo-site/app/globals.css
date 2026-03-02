@@ -134,6 +134,12 @@ a {
   padding: 0 24px;
 }
 
+/* Hero grid desktop: 2 columns — mobile override below in @media */
+.hero-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
 /* Card */
 .card {
   background: var(--white);
@@ -465,13 +471,13 @@ a {
   .cta-grid,
   .about-main-grid,
   .contact-grid {
-    grid-template-columns: 1fr !important;
-    gap: 32px !important;
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   /* Hide desktop right-column photo on hero */
   .hero-grid>div:last-child {
-    display: none !important;
+    display: none;
   }
 
   .services-alt-grid {
