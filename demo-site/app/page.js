@@ -211,7 +211,7 @@ export default function HomePage() {
       {/* ─── WHY CHOOSE US ─── */}
       <section style={{ background: '#F8FBFF', padding: '100px 0' }}>
         <div className="container-custom">
-          <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'center' }}>
+          <div className="about-grid" style={{ display: 'grid', alignItems: 'center' }}>
             {/* Stacked photo layout */}
             <div style={{ position: 'relative', paddingBottom: '60px' }}>
               <img
@@ -350,7 +350,7 @@ export default function HomePage() {
       {/* ─── CTA SPLIT ─── */}
       <section style={{ background: '#fff', padding: '100px 0' }}>
         <div className="container-custom">
-          <div className="cta-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'start' }}>
+          <div className="cta-grid" style={{ display: 'grid', alignItems: 'start' }}>
             <div>
               <p style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '2px', textTransform: 'uppercase', color: '#4CAF50', marginBottom: '12px' }}>Ready to visit us?</p>
               <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', fontWeight: '900', color: '#0B1C38', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '20px' }}>

@@ -141,6 +141,18 @@ a {
   gap: 48px;
 }
 
+/* About / Why Choose Us grid: 2 columns desktop */
+.about-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+/* CTA split grid: 2 columns desktop */
+.cta-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
 /* Card */
 .card {
   background: var(--white);
