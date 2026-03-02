@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -40,6 +41,7 @@ body {
   background: var(--white);
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* ─── CONTAINER ─── */

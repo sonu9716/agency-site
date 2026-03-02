@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -280,6 +281,19 @@ a {
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+  /* Hide tooltip on mobile so it doesn't overlap content */
+  .whatsapp-float .whatsapp-tooltip {
+    display: none;
+  }
+
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+  }
 }
 
 .whatsapp-btn {
