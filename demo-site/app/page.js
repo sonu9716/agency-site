@@ -68,7 +68,7 @@ export default function HomePage() {
                 from root canals to implants to smile makeovers.
               </p>
 
-              <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+              <div className="hero-btn-group" style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
                 <Link href="/contact" style={{
                   display: 'inline-flex', alignItems: 'center', gap: '8px',
                   background: '#4CAF50', color: '#fff',
@@ -94,7 +94,7 @@ export default function HomePage() {
               </div>
 
               {/* Stats row */}
-              <div style={{ display: 'flex', gap: '0', marginTop: '56px', paddingTop: '36px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+              <div className="hero-stat-row" style={{ display: 'flex', gap: '0', marginTop: '56px', paddingTop: '36px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
                 {[
                   { val: '500+', label: 'Patients Treated' },
                   { val: '98%', label: 'Success Rate' },
@@ -427,6 +427,37 @@ export default function HomePage() {
         @keyframes marquee {
           from { transform: translateX(0); }
           to { transform: translateX(-50%); }
+        }
+
+        @media (max-width: 768px) {
+          /* ── HERO GRID: force single column ── */
+          .hero-grid {
+            grid-template-columns: 1fr !important;
+            gap: 0 !important;
+          }
+
+          /* ── HERO BUTTONS: stack full-width ── */
+          .hero-btn-group {
+            flex-direction: column !important;
+            gap: 12px !important;
+          }
+          .hero-btn-group a {
+            width: 100% !important;
+            justify-content: center !important;
+            box-sizing: border-box !important;
+          }
+
+          /* ── HERO STATS: compact 3-column ── */
+          .hero-stat-row {
+            margin-top: 36px !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero-btn-group a {
+            font-size: 15px !important;
+            padding: 14px 20px !important;
+          }
         }
       `}</style>
     </>
