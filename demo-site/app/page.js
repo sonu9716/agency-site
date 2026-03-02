@@ -350,7 +350,7 @@ export default function HomePage() {
       {/* ─── CTA SPLIT ─── */}
       <section style={{ background: '#fff', padding: '100px 0' }}>
         <div className="container-custom">
-          <div className="cta-grid" style={{ display: 'grid', alignItems: 'start' }}>
+          <div className="cta-grid" style={{ display: 'grid', alignItems: 'start', minWidth: 0 }}>
             <div>
               <p style={{ fontSize: '12px', fontWeight: '700', letterSpacing: '2px', textTransform: 'uppercase', color: '#4CAF50', marginBottom: '12px' }}>Ready to visit us?</p>
               <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.4rem)', fontWeight: '900', color: '#0B1C38', lineHeight: '1.2', letterSpacing: '-0.02em', marginBottom: '20px' }}>
@@ -378,6 +378,7 @@ export default function HomePage() {
                 <a
                   href="https://wa.me/919990421048?text=Hi%2C%20I%20want%20a%20free%20consultation%20for%20my%20clinic%20website"
                   target="_blank" rel="noopener noreferrer"
+                  className="cta-contact-btn"
                   style={{
                     display: 'flex', alignItems: 'center', gap: '14px',
                     padding: '18px 22px', borderRadius: '10px',
@@ -396,6 +397,7 @@ export default function HomePage() {
                 <a
                   href="https://maps.google.com/?q=Vaibhav+Khand,+Indirapuram,+Ghaziabad"
                   target="_blank" rel="noopener noreferrer"
+                  className="cta-contact-btn"
                   style={{
                     display: 'flex', alignItems: 'center', gap: '14px',
                     padding: '18px 22px', borderRadius: '10px',
@@ -414,7 +416,7 @@ export default function HomePage() {
             </div>
 
             {/* Form */}
-            <div style={{ background: '#F8FBFF', borderRadius: '20px', padding: '36px', border: '1px solid #E0E7EF' }}>
+            <div className="cta-form-card" style={{ background: '#F8FBFF', borderRadius: '20px', padding: '36px', border: '1px solid #E0E7EF' }}>
               <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0B1C38', marginBottom: '6px' }}>Quick Appointment Request</h3>
               <p style={{ fontSize: '13px', color: '#78909C', marginBottom: '24px' }}>Fills WhatsApp automatically — just tap send.</p>
               <AppointmentForm compact={true} />

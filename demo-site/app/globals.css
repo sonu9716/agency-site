@@ -557,6 +557,27 @@ a {
   .container-custom {
     padding: 0 16px;
   }
+
+  /* Fix Quick Appointment Card overflow */
+  .cta-form-card {
+    padding: 24px 20px !important;
+  }
+
+  .cta-contact-btn {
+    padding: 14px 16px !important;
+    gap: 10px !important;
+  }
+
+  .cta-contact-btn div:last-child {
+    min-width: 0;
+  }
+
+  .cta-contact-btn div div:last-child {
+    font-size: 14px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 @media (max-width: 480px) {
