@@ -537,6 +537,8 @@ a {
     width: 100%;
     justify-content: center;
     text-align: center;
+    white-space: normal !important;
+    padding: 12px 16px !important;
   }
 
   /* Trust/stats counter row */

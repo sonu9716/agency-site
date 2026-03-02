@@ -136,7 +136,7 @@ export default function AppointmentForm({ compact = false }) {
                     style={{ resize: 'vertical' }}
                 />
             </div>
-            <button type="submit" className="btn-accent" style={{ justifyContent: 'center', padding: '14px 28px', fontSize: '16px' }}>
+            <button type="submit" className="btn-accent" style={{ justifyContent: 'center', fontSize: '16px' }}>
                 📲 Send via WhatsApp & Confirm
             </button>
             <p style={{ fontSize: '12px', color: '#78909C', textAlign: 'center' }}>
