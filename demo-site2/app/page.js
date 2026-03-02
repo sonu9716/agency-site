@@ -81,7 +81,7 @@ export default function HomePage() {
               </div>
 
               {/* Trust stats inline */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', marginTop: '52px', paddingTop: '32px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+              <div className="trust-stats-row" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0', marginTop: '52px', paddingTop: '32px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
                 {trustItems.map((s, i) => (
                   <div key={s.label} style={{
                     paddingRight: i < 3 ? '16px' : 0,
@@ -101,6 +101,7 @@ export default function HomePage() {
                 <img
                   src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=90&fit=crop&crop=top"
                   alt="Dr. Priya Gupta – Gynecologist in Indirapuram"
+                  className="hero-doctor-img"
                   style={{ width: '100%', height: '520px', objectFit: 'cover', display: 'block' }}
                 />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(45,11,69,0.8) 0%, transparent 55%)' }} />
@@ -116,7 +117,7 @@ export default function HomePage() {
               </div>
 
               {/* IMA badge */}
-              <div style={{ position: 'absolute', top: '24px', right: '-12px', background: '#fff', borderRadius: '12px', padding: '14px 16px', boxShadow: '0 8px 32px rgba(74,16,96,0.2)', maxWidth: '145px' }}>
+              <div style={{ position: 'absolute', top: '24px', right: '8px', background: '#fff', borderRadius: '12px', padding: '14px 16px', boxShadow: '0 8px 32px rgba(74,16,96,0.2)', maxWidth: '145px' }}>
                 <Icons.award width={22} height={22} color="#7B2D8B" style={{ marginBottom: '6px' }} />
                 <div style={{ fontSize: '11px', fontWeight: '700', color: '#1A0A2E', lineHeight: '1.4' }}>Member<br />Indian Medical<br />Association</div>
               </div>

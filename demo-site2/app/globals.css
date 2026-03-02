@@ -348,23 +348,79 @@ body {
     padding: 64px 0;
   }
 
+  .container-custom {
+    padding: 0 16px;
+  }
+
+  /* Stack all major grids */
   .hero-grid,
   .about-main-grid,
   .cta-grid,
   .split-grid {
     grid-template-columns: 1fr !important;
+    gap: 40px !important;
   }
 
+  /* Show photo above text in hero on mobile */
   .hero-grid>div:last-child {
     order: -1;
   }
 
+  /* Trim the hero image height on mobile */
+  .hero-grid img,
+  .hero-grid>div:last-child img {
+    height: 320px !important;
+    width: 100% !important;
+  }
+
+  /* No negative overflow on the IMA badge on mobile */
+  .hero-grid>div:last-child>div>div[style*='right: \'-12px\''],
+  .hero-grid>div:last-child>div>div[style*='right:-12px'] {
+    right: 8px !important;
+  }
+
+  /* Hero heading & paragraph sizing */
+  .heading-xl {
+    font-size: 2rem;
+  }
+
+  .heading-lg {
+    font-size: 1.5rem;
+  }
+
+  /* Trust stats: 2-column on mobile instead of 4 */
+  .trust-stats-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  /* Buttons full-width stacked */
+  .btn-primary,
+  .btn-gold,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* WA label hidden on mobile to save space */
+  .wa-label {
+    display: none;
+  }
+
+  /* Desktop nav links hidden */
   .desktop-nav {
     display: none !important;
   }
 
   .mobile-menu-btn {
     display: flex !important;
+  }
+
+  /* Floating card on split section */
+  .split-grid>div:first-child>div[style*='bottom: \'-20px\''],
+  .split-grid>div:first-child>div[style*='bottom:-20px'] {
+    bottom: -10px !important;
+    right: -8px !important;
   }
 }
 
@@ -375,5 +431,14 @@ body {
 
   .heading-lg {
     font-size: 1.4rem;
+  }
+
+  .section-padding {
+    padding: 48px 0;
+  }
+
+  /* Shrink hero image further on very small screens */
+  .hero-doctor-img {
+    height: 260px !important;
   }
 }

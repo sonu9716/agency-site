@@ -1135,41 +1135,148 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 860px) {
+    /* ── NAV ── */
+    .nav-links {
+        display: none;
+    }
+
+    .nav-cta {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    /* ── HERO ── */
     .hero {
-        grid-template-columns: 1fr;
+        padding: 90px 0 60px;
+    }
+
+    .hero-cols {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+
+    /* Hide mock device on mobile – not useful at small size */
+    .hero-cols > div:last-child {
+        display: none;
     }
 
     .hero-h1 {
-        font-size: 2.4rem;
+        font-size: clamp(2rem, 8vw, 2.8rem);
     }
 
-    .bento,
-    .price-grid,
-    .demo-grid,
-    .why-grid {
+    .hero-sub {
+        font-size: 15px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-wa,
+    .btn-ghost {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .stat-row {
+        gap: 20px;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+        padding: 64px 0;
+    }
+
+    .section-h {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+    }
+
+    /* ── BENTO / PAIN ── */
+    .bento {
         grid-template-columns: 1fr;
     }
 
-    .bento-cell,
-    .price-card,
-    .why-cell {
+    .bento-cell {
         border-radius: 12px !important;
     }
 
+    /* ── BEFORE / AFTER ── */
+    .compare-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    /* ── PRICING ── */
+    .price-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .price-card {
+        border-radius: 12px !important;
+    }
+
+    /* ── PROCESS ── */
     .process-track {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 32px;
     }
 
     .process-track::before {
         display: none;
     }
 
-    .compare-wrap {
+    /* ── DEMOS ── */
+    .demo-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .demo-card img {
+        height: 200px;
+    }
+
+    /* ── WHY US ── */
+    .why-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .why-cell {
+        border-radius: 12px !important;
+    }
+
+    /* ── FOOTER ── */
+    .foot-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .foot-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .why-grid {
         grid-template-columns: 1fr;
     }
 
-    .nav-links {
-        display: none;
+    .hero-h1 {
+        font-size: 2rem;
+    }
+
+    .stat-row {
+        gap: 16px;
+    }
+
+    .stat-item .s-val {
+        font-size: 1.6rem;
     }
 }

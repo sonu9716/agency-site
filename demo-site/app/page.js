@@ -157,7 +157,7 @@ export default function HomePage() {
               <div style={{
                 position: 'absolute',
                 top: '20px',
-                right: '-16px',
+                right: '8px',
                 background: '#fff',
                 borderRadius: '12px',
                 padding: '14px 18px',

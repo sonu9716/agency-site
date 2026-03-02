@@ -466,8 +466,10 @@ a {
   .about-main-grid,
   .contact-grid {
     grid-template-columns: 1fr !important;
+    gap: 32px !important;
   }
 
+  /* Hide desktop right-column photo on hero */
   .hero-grid>div:last-child {
     display: none !important;
   }
@@ -478,5 +480,57 @@ a {
 
   .services-alt-grid>div[style*='grid-template-areas'] {
     grid-template-areas: '"img"\n"content"' !important;
+  }
+
+  /* Hero section comfortable padding */
+  section[style*="minHeight: '100vh'"],
+  section[style*='min-height: 100vh'] {
+    min-height: unset !important;
+    padding-top: 90px !important;
+    padding-bottom: 60px !important;
+  }
+
+  /* Buttons full-width on mobile */
+  .btn-primary,
+  .btn-accent,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Trust/stats counter row */
+  .trust-card {
+    padding: 16px 10px;
+  }
+
+  .trust-number {
+    font-size: 1.8rem;
+  }
+
+  /* Section headings */
+  .section-title {
+    font-size: 1.65rem;
+  }
+
+  /* Container padding */
+  .container-custom {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.45rem;
+  }
+
+  .section-padding {
+    padding: 48px 0;
+  }
+
+  /* WhatsApp float button smaller on small screens */
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
   }
 }
