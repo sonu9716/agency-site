@@ -174,10 +174,10 @@ export default function HomePage() {
       </section>
 
       {/* ─── MARQUEE BAND ─── */}
-      <div style={{ background: '#4CAF50', padding: '14px 24px', overflow: 'hidden', whiteSpace: 'nowrap' }}>
-        <div style={{ display: 'inline-flex', gap: '60px', animation: 'marquee 25s linear infinite' }}>
+      <div style={{ background: '#4CAF50', padding: '14px 0', overflow: 'hidden', position: 'relative', width: '100%', maxWidth: '100vw' }}>
+        <div style={{ display: 'inline-flex', gap: '60px', animation: 'marquee 25s linear infinite', whiteSpace: 'nowrap' }}>
           {['Root Canal Treatment', 'Dental Implants', 'Braces & Aligners', 'Teeth Whitening', 'Kids Dentistry', 'Root Canal Treatment', 'Dental Implants', 'Braces & Aligners', 'Teeth Whitening', 'Kids Dentistry'].map((t, i) => (
-            <span key={i} style={{ fontSize: '13px', fontWeight: '600', color: '#fff', letterSpacing: '1px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', gap: '16px' }}>
+            <span key={i} style={{ fontSize: '13px', fontWeight: '600', color: '#fff', letterSpacing: '1px', textTransform: 'uppercase', display: 'inline-flex', alignItems: 'center', gap: '16px', paddingLeft: i === 0 ? '24px' : '0' }}>
               {t}
               <span style={{ display: 'inline-block', width: '5px', height: '5px', borderRadius: '50%', background: 'rgba(255,255,255,0.5)' }} />
             </span>
