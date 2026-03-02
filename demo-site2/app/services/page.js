@@ -84,13 +84,13 @@ export default function ServicesPage() {
             </section>
 
             {/* Services */}
-            <section style={{ background: '#FDFBFE', padding: '96px 0' }}>
+            <section style={{ background: '#FDFBFE' }} className="section-padding">
                 <div className="container-custom">
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
+                    <div className="services-container-gap" style={{ display: 'flex', flexDirection: 'column' }}>
                         {services.map((s, i) => {
                             const Icon = s.Icon;
                             return (
-                                <div key={s.title} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center', direction: i % 2 === 1 ? 'rtl' : 'ltr' }} className="about-grid">
+                                <div key={s.title} style={{ display: 'grid', alignItems: 'center', direction: i % 2 === 1 ? 'rtl' : 'ltr' }} className="service-item-grid">
                                     <div style={{ position: 'relative', direction: 'ltr' }}>
                                         <img src={s.img} alt={s.title} style={{ width: '100%', height: '380px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 16px 56px rgba(74,16,96,0.16)', display: 'block' }} />
                                         <div style={{ position: 'absolute', bottom: '20px', right: '20px', background: '#fff', borderRadius: '10px', padding: '10px 16px', boxShadow: '0 4px 20px rgba(74,16,96,0.15)' }}>

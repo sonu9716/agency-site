@@ -323,6 +323,18 @@ body {
   flex-shrink: 0;
 }
 
+/* ─── GRID SYSTEMS ─── */
+.service-item-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.services-container-gap {
+  gap: 80px;
+}
+
 /* ─── GOLD DIVIDER ─── */
 .gold-line {
   width: 40px;
@@ -358,9 +370,30 @@ body {
   .hero-grid,
   .about-main-grid,
   .cta-grid,
-  .split-grid {
+  .split-grid,
+  .service-item-grid {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
+  }
+
+  /* Reset RTL direction and handle stacking order for services */
+  .service-item-grid {
+    direction: ltr !important;
+    gap: 48px !important;
+  }
+
+  .service-item-grid>div:first-child {
+    order: 1;
+    /* Image */
+  }
+
+  .service-item-grid>div:last-child {
+    order: 2;
+    /* Content */
+  }
+
+  .services-container-gap {
+    gap: 64px !important;
   }
 
   /* Show photo above text in hero on mobile */
