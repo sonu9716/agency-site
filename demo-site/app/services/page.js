@@ -83,7 +83,7 @@ const services = [
         ],
         cost: '₹5,000 – ₹12,000',
         duration: '60–90 min per session',
-        img: 'https://images.unsplash.com/photo-1559591937-aaaf10de7c1a?w=600&q=80&fit=crop',
+        img: '/demo1/assets/teeth-whitening.jpg',
         color: '#E65100',
         bg: '#FFF3E0',
     },

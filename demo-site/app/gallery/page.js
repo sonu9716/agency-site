@@ -31,7 +31,7 @@ const galleryItems = [
         id: 4,
         type: 'before-after',
         title: 'Dental Implant',
-        before: 'https://images.unsplash.com/photo-1565967511849-76a60a516170?w=600&q=80&fit=crop',
+        before: '/demo1/assets/implant-model.jpg',
         after: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&fit=crop',
         category: 'Implants',
     },
