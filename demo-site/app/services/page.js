@@ -146,14 +146,8 @@ export default function ServicesPage() {
                         {services.map((s, i) => (
                             <div
                                 key={s.title}
-                                className="card"
-                                style={{
-                                    padding: '0',
-                                    overflow: 'hidden',
-                                    display: 'grid',
-                                    gridTemplateColumns: i % 2 === 0 ? '1fr 1.4fr' : '1.4fr 1fr',
-                                    gridTemplateAreas: i % 2 === 0 ? '"img content"' : '"content img"',
-                                }}
+                                className={`card ${i % 2 === 0 ? 'service-card-even' : 'service-card-odd'}`}
+                                style={{ padding: '0' }}
                                 id={s.title.toLowerCase().replace(/\s+/g, '-')}
                             >
                                 {/* Image */}

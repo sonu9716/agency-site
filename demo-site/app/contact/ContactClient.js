@@ -50,10 +50,7 @@ export default function ContactClient() {
 
             <section className="section-padding" style={{ background: '#F8FBFF' }}>
                 <div className="container-custom">
-                    <div
-                        style={{ display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '40px', alignItems: 'start' }}
-                        className="contact-grid"
-                    >
+                    <div className="contact-grid">
                         {/* Left Column */}
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                             {/* Contact Info Card */}
@@ -218,12 +215,6 @@ export default function ContactClient() {
                     </div>
                 </div>
             </section>
-
-            <style jsx>{`
-        @media (max-width: 768px) {
-          .contact-grid { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
         </>
     );
 }

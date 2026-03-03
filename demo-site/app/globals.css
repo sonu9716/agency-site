@@ -147,6 +147,29 @@ a {
   gap: 80px;
 }
 
+/* Service Alternating Custom Grids */
+.service-card-even {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  grid-template-areas: "img content";
+  overflow: hidden;
+}
+
+.service-card-odd {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  grid-template-areas: "content img";
+  overflow: hidden;
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  align-items: start;
+}
+
 /* CTA split grid: 2 columns desktop */
 .cta-grid {
   grid-template-columns: 1fr 1fr;
@@ -496,9 +519,16 @@ a {
   .about-grid,
   .cta-grid,
   .about-main-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .contact-grid,
+  .service-card-even,
+  .service-card-odd {
+    grid-template-columns: 1fr !important;
     gap: 32px;
+  }
+
+  .service-card-even,
+  .service-card-odd {
+    grid-template-areas: "img" "content" !important;
   }
 
   /* ── Hero: don't make the dark section fill entire screen on mobile ── */
