@@ -54,7 +54,7 @@ export default function ContactClient() {
                         {/* Left Column */}
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                             {/* Contact Info Card */}
-                            <div className="card" style={{ padding: '28px' }}>
+                            <div className="card responsive-card-padding">
                                 <h3 style={{ fontSize: '17px', fontWeight: '700', color: '#1A1A2E', marginBottom: '20px' }}>
                                     📞 Contact Information
                                 </h3>
@@ -118,7 +118,7 @@ export default function ContactClient() {
                             </div>
 
                             {/* Timings */}
-                            <div className="card" style={{ padding: '28px' }}>
+                            <div className="card responsive-card-padding">
                                 <h3 style={{ fontSize: '17px', fontWeight: '700', color: '#1A1A2E', marginBottom: '20px' }}>
                                     ⏰ Clinic Timings
                                 </h3>
@@ -169,7 +169,7 @@ export default function ContactClient() {
                         {/* Right Column */}
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                             {/* Appointment Form */}
-                            <div className="card" style={{ padding: '32px' }}>
+                            <div className="card responsive-card-padding">
                                 <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#1A1A2E', marginBottom: '8px' }}>
                                     📅 Book an Appointment
                                 </h3>
@@ -193,7 +193,7 @@ export default function ContactClient() {
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14003.562614437226!2d77.36430774999999!3d28.644808749999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a03a6b9a9b%3A0x45c3b8a84d0b60f6!2sVaibhav%20Khand%2C%20Indirapuram%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201012!5e0!3m2!1sen!2sin!4v1709315600000!5m2!1sen!2sin"
                                     width="100%"
                                     height="340"
-                                    style={{ border: 0, display: 'block' }}
+                                    style={{ border: 0, display: 'block', maxWidth: '100%' }}
                                     allowFullScreen
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"

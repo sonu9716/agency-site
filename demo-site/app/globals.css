@@ -190,6 +190,15 @@ a {
   box-shadow: 0 12px 40px rgba(21, 101, 192, 0.15);
 }
 
+.responsive-card-padding {
+  padding: 32px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 18px;
+}
+
 /* Buttons */
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
@@ -609,6 +618,14 @@ a {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .responsive-card-padding {
+    padding: 24px 20px !important;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 

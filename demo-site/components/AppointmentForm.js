@@ -46,17 +46,17 @@ export default function AppointmentForm({ compact = false }) {
             <div
                 style={{
                     textAlign: 'center',
-                    padding: '48px 24px',
+                    padding: '32px 20px',
                     background: '#E8F5E9',
                     borderRadius: '16px',
                     border: '2px solid #4CAF50',
                 }}
             >
-                <div style={{ fontSize: '48px', marginBottom: '12px' }}>✅</div>
-                <h3 style={{ color: '#2E7D32', fontSize: '20px', fontWeight: '700', marginBottom: '8px' }}>
+                <div style={{ fontSize: '40px', marginBottom: '12px' }}>✅</div>
+                <h3 style={{ color: '#2E7D32', fontSize: '18px', fontWeight: '700', marginBottom: '8px' }}>
                     WhatsApp Opened!
                 </h3>
-                <p style={{ color: '#388E3C', fontSize: '14px' }}>
+                <p style={{ color: '#388E3C', fontSize: '13px' }}>
                     Your appointment details have been pre-filled. Just send the message to confirm.
                 </p>
             </div>
@@ -65,7 +65,7 @@ export default function AppointmentForm({ compact = false }) {
 
     return (
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: compact ? '1fr' : '1fr 1fr', gap: '18px' }}>
+            <div className="form-grid" style={{ gridTemplateColumns: compact ? '1fr' : undefined }}>
                 <div>
                     <label className="form-label" htmlFor="appt-name">Full Name *</label>
                     <input
@@ -93,7 +93,7 @@ export default function AppointmentForm({ compact = false }) {
                     />
                 </div>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: compact ? '1fr' : '1fr 1fr', gap: '18px' }}>
+            <div className="form-grid" style={{ gridTemplateColumns: compact ? '1fr' : undefined }}>
                 <div>
                     <label className="form-label" htmlFor="appt-date">Preferred Date</label>
                     <input
@@ -103,6 +103,7 @@ export default function AppointmentForm({ compact = false }) {
                         name="date"
                         value={form.date}
                         onChange={handleChange}
+                        placeholder="dd-mm-yyyy"
                         min={new Date().toISOString().split('T')[0]}
                     />
                 </div>
